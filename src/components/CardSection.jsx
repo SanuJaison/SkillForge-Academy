@@ -18,7 +18,7 @@ const CardSection = () => {
           <h2
             className="mb-5"
             style={{
-              fontSize: "50px",
+              fontSize: "clamp(1.8rem, 4vw, 3.125rem)",
               fontWeight: "800",
             }}
           >
@@ -26,9 +26,9 @@ const CardSection = () => {
           </h2>
         </div>
 
-        <div className="row g-4 ps-5 pe-5">
+        <div className="row g-4 px-2 px-md-5">
           {coursesData.slice(0, 3).map((course) =>(
-            <div key={course.id} className="col-lg-4">
+            <div key={course.id} className="col-12 col-md-6 col-lg-4">
           <CourseCard course={course}/>
         </div>
           ))}

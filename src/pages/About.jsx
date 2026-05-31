@@ -29,61 +29,68 @@ const About = () => {
 
   return (
     <>
-      <section className="p-5">
-        <div className="container mt-5 d-flex gap-2">
-          <div>
-            <p className="text-danger mb-2" style={{ fontWeight: "800" }}>
-              ABOUT US
-            </p>
-            <h2
-              className="mb-5"
-              style={{
-                fontSize: "50px",
-                fontWeight: "800",
-                width: "650px",
-              }}
-            >
-              Training built around real developer work.
-            </h2>
-            <p
-              style={{
-                fontSize: "22px",
-                fontWeight: 400,
-                color: "#5d6875",
-                width: "650px",
-              }}
-            >
-              SkillForge Academy helps students and early professionals learn
-              job-ready technical skills through practical projects, mentor
-              guidance, and focused course paths.
-            </p>
-            <p style={{ fontSize: "18px", width: "600px" }}>
-              Our programs cover modern web development, backend frameworks,
-              frontend design, data tools, and deployment basics so learners
-              understand how complete applications are planned, built, and
-              shipped.
-            </p>
-          </div>
+      <section className="px-2 px-md-5 py-5">
+        <div className="container mt-5">
+          <div className="row align-items-center gy-5">
+            <div className="col-12 col-lg-6">
+              <p className="text-danger mb-2" style={{ fontWeight: "800" }}>
+                ABOUT US
+              </p>
+              <h2
+                className="mb-4 mb-lg-5"
+                style={{
+                  fontSize: "clamp(1.8rem, 4vw, 3.125rem)",
+                  fontWeight: "800",
+                  maxWidth: "650px",
+                  width: "100%",
+                }}
+              >
+                Training built around real developer work.
+              </h2>
+              <p
+                style={{
+                  fontSize: "clamp(1.1rem, 2vw, 1.375rem)",
+                  fontWeight: 400,
+                  color: "#5d6875",
+                  maxWidth: "650px",
+                  width: "100%",
+                }}
+              >
+                SkillForge Academy helps students and early professionals learn
+                job-ready technical skills through practical projects, mentor
+                guidance, and focused course paths.
+              </p>
+              <p style={{ fontSize: "clamp(1rem, 1.5vw, 1.125rem)", maxWidth: "600px", width: "100%" }}>
+                Our programs cover modern web development, backend frameworks,
+                frontend design, data tools, and deployment basics so learners
+                understand how complete applications are planned, built, and
+                shipped.
+              </p>
+            </div>
 
-          <div
-            className="overflow-hidden rounded-4 shadow-lg"
-            style={{
-              width: "100%",
-              maxWidth: "700px",
-            }}
-          >
-            <img
-              src={aboutImg}
-              alt=""
-              className="w-100 h-100 object-fit-cover"
-            />
+            <div className="col-12 col-lg-6">
+              <div
+                className="overflow-hidden rounded-4 shadow-lg animate-fade-in"
+                style={{
+                  width: "100%",
+                  maxWidth: "700px",
+                  height: "clamp(300px, 40vw, 480px)",
+                }}
+              >
+                <img
+                  src={aboutImg}
+                  alt=""
+                  className="w-100 h-100 object-fit-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <div className="container pb-5">
         <div className="row g-4">
           {features.map((feature) => (
-            <div key={feature.title} className="col-lg-4">
+            <div key={feature.title} className="col-12 col-md-4">
               <FeatureCard feature={feature} />
             </div>
           ))}

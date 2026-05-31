@@ -27,7 +27,7 @@ const Contact = () => {
   ];
   return (
     <>
-      <section className="p-5 bg-light">
+      <section className="px-2 px-md-5 py-5 bg-light">
         <div className="container mt-5">
           <p
             className="mb-2"
@@ -37,9 +37,10 @@ const Contact = () => {
           </p>
           <h1
             style={{
-              fontSize: "70px",
+              fontSize: "clamp(2rem, 5vw, 4.375rem)",
               fontWeight: "800",
-              width: "650px",
+              maxWidth: "650px",
+              width: "100%",
             }}
           >
             Talk to our course advisor
@@ -50,18 +51,18 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="row g-4 p-5">
+        <div className="row g-4 py-4 py-md-5 px-1 px-md-3">
           {contactInfo.map((item) => (
-            <div key={item.title} className="col-lg-4">
+            <div key={item.title} className="col-12 col-md-4">
               <ContactCard contact={item} />
             </div>
           ))}
         </div>
 
-        <div className="p-5">
+        <div className="py-4 py-md-5 px-1 px-md-3">
           <div className="row g-4">
-            <div className="col-lg-7">
-              <div className="border rounded-3 p-5 bg-white">
+            <div className="col-12 col-lg-7">
+              <div className="border rounded-3 p-3 p-md-5 bg-white">
                 <p className="text-danger mb-2" style={{ fontWeight: 800 }}>
                   ENQUIRY FORM
                 </p>
@@ -164,9 +165,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="col-lg-5">
+            <div className="col-12 col-lg-5">
               <div
-                className="rounded-3 p-5 text-white h-100"
+                className="rounded-3 p-3 p-md-5 text-white h-100"
                 style={{
                   background: "linear-gradient(135deg, #0f172a, #111827)",
                 }}

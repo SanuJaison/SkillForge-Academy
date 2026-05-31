@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="container">
         <div className="row gy-5">
 
-          <div className="col-lg-4">
+          <div className="col-12 col-md-6 col-lg-4">
             <Link to="/" className="text-decoration-none">
               <div className="d-flex align-items-center gap-3 mb-4 footerlogo">
                 <div
@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="col-lg-2">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-2">
             <h4 className="fw-bold mb-4">Pages</h4>
 
             <div className="d-flex flex-column gap-3">
@@ -77,7 +77,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-3">
+          <div className="col-12 col-sm-6 col-md-6 col-lg-3">
             <h4 className="fw-bold mb-4">Courses</h4>
 
             <div className="d-flex flex-column gap-3" style={{color: "#b8c5cf",}}>
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-lg-3">
+          <div className="col-12 col-md-6 col-lg-3">
             <h4 className="fw-bold mb-4">Contact</h4>
 
             <div className="d-flex flex-column gap-4" style={{color: "#b8c5cf",}}>

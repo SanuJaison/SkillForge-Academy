@@ -13,7 +13,7 @@ const CourseCard = ({ course }) => {
         alt={course.title}
         className="card-img-top"
         style={{
-          height: "",
+          height: "220px",
           objectFit: "cover",
         }}
       />

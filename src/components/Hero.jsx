@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="container position-relative">
           <div
             className="row align-items-center gy-5"
-            style={{ paddingTop: "100px" }}
+            style={{ paddingTop: "120px", paddingBottom: "50px" }}
           >
             <div className="col-lg-6">
               <p
@@ -44,7 +44,7 @@ const Hero = () => {
               <h1
                 className=" lh-1"
                 style={{
-                  fontSize: "80px",
+                  fontSize: "clamp(2rem, 5.5vw, 5rem)",
                   color: "#0f172a",
                   fontWeight: 800,
                 }}
@@ -89,7 +89,7 @@ const Hero = () => {
                 style={{
                   width: "100%",
                   maxWidth: "700px",
-                  height: "530px",
+                  height: "clamp(300px, 45vw, 530px)",
                 }}
               >
                 <img
