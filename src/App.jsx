@@ -8,6 +8,7 @@ import Courses from "./pages/Courses";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import NotFound from "./pages/NotFound";
 
 function App() {
   
@@ -22,6 +23,8 @@ function App() {
       <Route path="/courses" element={<Courses/>} />
       <Route path="/about" element={<About/>} />
       <Route path="/contact" element={<Contact/>} />
+
+      <Route path="/*" element={<NotFound/>} />
     </Routes>
 
     <Footer/>

@@ -37,7 +37,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         <Navbar.Collapse id="basic-navbar-nav">
-          <div className="ms-auto d-flex flex-column flex-lg-row align-items-center gap-2 gap-lg-3 mt-3 mt-lg-0 me-lg-5">
+          <div className="ms-auto d-flex flex-column flex-lg-row align-items-center mt-3 mt-lg-0 me-lg-5">
 
             <NavLink
               to="/"
