@@ -6,6 +6,13 @@ import ContactCard from "../components/ContactCard";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { GoClock } from "react-icons/go";
 import { SlCalender } from "react-icons/sl";
+import {
+  LuBadgeIndianRupee,
+  LuBookOpenCheck,
+  LuCircleHelp,
+  LuMessagesSquare,
+} from "react-icons/lu";
+import coursesData from "../data/coursesData";
 
 const Contact = () => {
   const contactInfo = [
@@ -25,44 +32,119 @@ const Contact = () => {
       value: "Ernakulam, Kerala, India",
     },
   ];
+
+  const helpTopics = [
+    {
+      icon: <LuBookOpenCheck />,
+      title: "Course guidance",
+      description: "Compare tracks and choose the course that fits your current skill level and career goal.",
+    },
+    {
+      icon: <LuBadgeIndianRupee />,
+      title: "Fees and batches",
+      description: "Get details about fees, upcoming batches, class timing, and available demo sessions.",
+    },
+    {
+      icon: <LuMessagesSquare />,
+      title: "Enrollment support",
+      description: "Ask about the admission process, payment steps, prerequisites, and learning schedule.",
+    },
+  ];
+
+  const faqs = [
+    {
+      question: "Can I ask for help choosing a course?",
+      answer: "Yes. Share your current background and goal, and our advisor can suggest a suitable learning path.",
+    },
+    {
+      question: "Do you provide demo sessions?",
+      answer: "Demo sessions are available for selected batches depending on course timing and seat availability.",
+    },
+    {
+      question: "How soon will I get a response?",
+      answer: "Most enquiries are answered during admission support hours, Monday to Saturday from 10:00 AM to 7:00 PM.",
+    },
+    {
+      question: "Can beginners join the courses?",
+      answer: "Yes. Several courses are beginner friendly and start from the fundamentals before moving into projects.",
+    },
+    {
+      question: "Will I build projects during the course?",
+      answer: "Yes. Courses include practical assignments and portfolio-focused projects based on the selected track.",
+    },
+  ];
+
   return (
     <>
-      <section className="px-2 px-md-5 py-5 bg-light">
+      <section className="contact-hero-section px-2 px-md-5 py-5 bg-light">
         <div className="container mt-5">
-          <p
-            className="mb-2"
-            style={{ fontWeight: "800", color: "#5d6875", fontSize: "20px" }}
-          >
-            CONTACT US
-          </p>
-          <h1
-            style={{
-              fontSize: "clamp(2rem, 5vw, 4.375rem)",
-              fontWeight: "800",
-              maxWidth: "650px",
-              width: "100%",
-            }}
-          >
-            Talk to our course advisor
-          </h1>
-          <p style={{ fontSize: "22px", color: "#5d6875" }}>
-            Reach out for course details, batch timing, fees, or help choosing
-            the right learning path.
-          </p>
-        </div>
-
-        <div className="row g-4 py-4 py-md-5 px-1 px-md-3">
-          {contactInfo.map((item) => (
-            <div key={item.title} className="col-12 col-md-4">
-              <ContactCard contact={item} />
+          <div className="row gy-4">
+            <div className="col-lg-9">
+              <p
+                className="mb-2"
+                style={{ fontWeight: "800", color: "#5d6875", fontSize: "20px" }}
+              >
+                CONTACT US
+              </p>
+              <h1
+                style={{
+                  fontSize: "clamp(2rem, 5vw, 4.375rem)",
+                  fontWeight: "800",
+                  maxWidth: "780px",
+                  width: "100%",
+                }}
+              >
+                Talk to our course advisor
+              </h1>
+              <p className="contact-hero-copy">
+                Reach out for course details, batch timing, fees, demo sessions,
+                or help choosing the right learning path.
+              </p>
             </div>
-          ))}
+          </div>
         </div>
 
-        <div className="py-4 py-md-5 px-1 px-md-3">
+        <div className="container">
+          <div className="row g-4 py-4 py-md-5">
+            {contactInfo.map((item) => (
+              <div key={item.title} className="col-12 col-md-4">
+                <ContactCard contact={item} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-5">
+        <div className="container">
+          <div className="text-center mx-auto mb-5" style={{ maxWidth: "760px" }}>
+            <p className="text-danger mb-2" style={{ fontWeight: 800 }}>
+              HOW WE CAN HELP
+            </p>
+            <h2 className="contact-section-title">
+              Ask the right questions before you join.
+            </h2>
+          </div>
+
           <div className="row g-4">
+            {helpTopics.map((topic) => (
+              <div key={topic.title} className="col-12 col-md-4">
+                <div className="contact-help-card">
+                  <div className="contact-help-icon">{topic.icon}</div>
+                  <h5>{topic.title}</h5>
+                  <p>{topic.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-5 bg-light">
+        <div className="container">
+          <div className="row g-4 align-items-stretch">
             <div className="col-12 col-lg-7">
-              <div className="border rounded-3 p-3 p-md-5 bg-white">
+              <div className="contact-form-card">
                 <p className="text-danger mb-2" style={{ fontWeight: 800 }}>
                   ENQUIRY FORM
                 </p>
@@ -128,10 +210,9 @@ const Contact = () => {
 
                       <select className="form-select form-select-lg">
                         <option>Select a course</option>
-                        <option>MERN Stack</option>
-                        <option>Python Full Stack</option>
-                        <option>Java Full Stack</option>
-                        <option>Data Science</option>
+                        {coursesData.map((course) => (
+                          <option key={course.id}>{course.title}</option>
+                        ))}
                       </select>
                     </div>
 
@@ -166,12 +247,7 @@ const Contact = () => {
             </div>
 
             <div className="col-12 col-lg-5">
-              <div
-                className="rounded-3 p-3 p-md-5 text-white h-100"
-                style={{
-                  background: "linear-gradient(135deg, #0f172a, #111827)",
-                }}
-              >
+              <div className="contact-support-panel">
                 <p className="text-warning mb-2" style={{ fontWeight: 800 }}>
                   VISIT DETAILS
                 </p>
@@ -241,6 +317,35 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-5">
+        <div className="container">
+          <div className="mb-4" style={{ maxWidth: "860px" }}>
+              <p className="text-danger mb-2" style={{ fontWeight: 800 }}>
+                QUICK ANSWERS
+              </p>
+              <h2 className="contact-section-title">
+                Common questions before contacting us.
+              </h2>
+              <p className="contact-section-copy">
+                These answers cover the most common admission doubts. For
+                anything specific, send the enquiry form and we will guide you.
+              </p>
+          </div>
+
+          <div className="contact-faq-list">
+            {faqs.map((faq) => (
+              <div key={faq.question} className="contact-faq-item">
+                <LuCircleHelp />
+                <div>
+                  <h5>{faq.question}</h5>
+                  <p>{faq.answer}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

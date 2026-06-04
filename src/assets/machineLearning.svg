@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Machine learning course artwork</title>
+  <desc id="desc">A neural network diagram with data charts and model nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="1" stop-color="#581c87"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" fill="url(#bg)"/>
+  <rect x="112" y="96" width="676" height="368" rx="28" fill="#f8fafc"/>
+  <path d="M226 362l82-88 84 42 90-118 92 76 112-136" fill="none" stroke="#7c3aed" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M250 174h72M250 222h118M250 270h62" stroke="#94a3b8" stroke-width="16" stroke-linecap="round"/>
+  <g stroke="#0284c7" stroke-width="8">
+    <path d="M500 206l92-48M500 206l92 48M592 158l98 48M592 254l98-48M690 206l-2 96"/>
+  </g>
+  <circle cx="500" cy="206" r="28" fill="#38bdf8"/>
+  <circle cx="592" cy="158" r="28" fill="#a78bfa"/>
+  <circle cx="592" cy="254" r="28" fill="#a78bfa"/>
+  <circle cx="690" cy="206" r="28" fill="#22c55e"/>
+  <circle cx="688" cy="302" r="28" fill="#fb7185"/>
+  <text x="218" y="414" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="800">MACHINE LEARNING</text>
+</svg>

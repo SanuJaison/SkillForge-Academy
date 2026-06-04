@@ -1,9 +1,15 @@
 import mernImg from "../assets/mern.avif";
 import pythonImg from "../assets/python.avif";
 import javaImg from "../assets/java.avif";
-import forntendImg from "../assets/frontend.avif";
+import frontendImg from "../assets/frontend.avif";
 import dataAnalysisImg from "../assets/dataAnalysis.avif";
 import devOpsImg from "../assets/devops.avif";
+import reactAdvancedImg from "../assets/reactAdvanced.svg";
+import nodeBackendImg from "../assets/nodeBackend.svg";
+import uiuxDesignImg from "../assets/uiuxDesign.svg";
+import machineLearningImg from "../assets/machineLearning.svg";
+import softwareTestingImg from "../assets/softwareTesting.svg";
+import awsCloudImg from "../assets/awsCloud.svg";
 
 const coursesData = [
     {
@@ -42,7 +48,7 @@ const coursesData = [
         price: "₹31,999",
         description: "Create enterprise-grade applications with Java, Spring Boot APIs, secure services, frontend views, and database systems.",
         duration: "26 weeks",
-        level: "Carrer track",
+        level: "Career track",
         image: javaImg,
         technologies: [
             "Java",
@@ -58,7 +64,7 @@ const coursesData = [
         description: "Master responsive UI development, React components, Bootstrap layouts, state basics, and practical interface projects.",
         duration: "16 weeks",
         level: "Foundation track",
-        image: forntendImg,
+        image: reactAdvancedImg,
         technologies: [
             "HTML",
             "CSS",
@@ -95,9 +101,97 @@ const coursesData = [
             "Docker",
             "AWS"
         ]
+    },
+    {
+        id: 7,
+        title: "React JS Advanced",
+        price: "₹18,999",
+        description: "Build polished React applications with routing, reusable components, hooks, API integration, and dashboard workflows.",
+        duration: "12 weeks",
+        level: "Intermediate track",
+        image: frontendImg,
+        technologies: [
+            "React",
+            "Hooks",
+            "Redux",
+            "APIs"
+        ]
+    },
+    {
+        id: 8,
+        title: "Node.js Backend Development",
+        price: "₹22,999",
+        description: "Create secure backend services with Express, authentication, database models, validation, and production API patterns.",
+        duration: "16 weeks",
+        level: "Backend track",
+        image: nodeBackendImg,
+        technologies: [
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "JWT"
+        ]
+    },
+    {
+        id: 9,
+        title: "UI/UX Design Essentials",
+        price: "₹17,999",
+        description: "Learn user research basics, wireframing, visual design, prototyping, and responsive layouts for modern digital products.",
+        duration: "14 weeks",
+        level: "Design foundation",
+        image: uiuxDesignImg,
+        technologies: [
+            "Figma",
+            "Wireframes",
+            "Prototypes",
+            "UI Design"
+        ]
+    },
+    {
+        id: 10,
+        title: "Machine Learning Basics",
+        price: "₹26,999",
+        description: "Understand core ML concepts, data preparation, model training, evaluation, and beginner-friendly prediction projects.",
+        duration: "20 weeks",
+        level: "Beginner ML track",
+        image: machineLearningImg,
+        technologies: [
+            "Python",
+            "NumPy",
+            "Scikit-learn",
+            "Models"
+        ]
+    },
+    {
+        id: 11,
+        title: "Software Testing & QA",
+        price: "₹16,999",
+        description: "Practice manual testing, test cases, bug reports, API testing, automation basics, and quality workflows used by teams.",
+        duration: "12 weeks",
+        level: "QA starter track",
+        image: softwareTestingImg,
+        technologies: [
+            "Testing",
+            "Postman",
+            "Selenium",
+            "Jira"
+        ]
+    },
+    {
+        id: 12,
+        title: "AWS Cloud Practitioner",
+        price: "₹23,999",
+        description: "Learn cloud fundamentals, AWS services, storage, networking, security basics, and deployment concepts for beginners.",
+        duration: "15 weeks",
+        level: "Cloud foundation",
+        image: awsCloudImg,
+        technologies: [
+            "AWS",
+            "EC2",
+            "S3",
+            "IAM"
+        ]
     }
-
-
 ]
 
 export default coursesData;

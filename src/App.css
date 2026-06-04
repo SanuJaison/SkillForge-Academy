@@ -28,3 +28,471 @@
 .footerlogo:hover {
   color: white;
 }
+
+.home-stats-section {
+  background-color: #0f172a;
+  padding: 28px 0;
+}
+
+.home-stat {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: white;
+  height: 100%;
+  padding: 22px 18px;
+  text-align: center;
+}
+
+.home-stat p {
+  color: #34d399;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.home-stat span {
+  color: #cbd5e1;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.home-section-copy {
+  color: #5d6875;
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+}
+
+.home-highlight-card,
+.home-support-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  height: 100%;
+  padding: 28px;
+  transition: 0.3s ease;
+}
+
+.home-highlight-card:hover,
+.home-support-card:hover {
+  border-color: #b7d8c8;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  transform: translateY(-5px);
+}
+
+.home-highlight-icon,
+.home-cta-icon {
+  align-items: center;
+  background: #d1e7dd;
+  border-radius: 8px;
+  color: rgb(24, 121, 91);
+  display: inline-flex;
+  font-size: 2rem;
+  height: 58px;
+  justify-content: center;
+  margin-bottom: 22px;
+  width: 58px;
+}
+
+.home-highlight-card h5,
+.home-support-card h5 {
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.home-highlight-card p,
+.home-support-card p,
+.home-project-band p,
+.home-cta p {
+  color: #5d6875;
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  margin-bottom: 0;
+}
+
+.home-project-band {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #eef7f2 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: clamp(28px, 5vw, 56px);
+}
+
+.home-project-band h2 {
+  color: #0f172a;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.home-project-band .btn {
+  margin-top: 28px;
+}
+
+.home-learning-path {
+  display: grid;
+  gap: 16px;
+}
+
+.home-path-item {
+  align-items: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  gap: 18px;
+  padding: 18px;
+}
+
+.home-path-item span {
+  align-items: center;
+  background: #198754;
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  flex: 0 0 42px;
+  font-weight: 800;
+  height: 42px;
+  justify-content: center;
+  width: 42px;
+}
+
+.home-path-item p {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.home-support-card svg {
+  color: #198754;
+  font-size: 2.35rem;
+  margin-bottom: 18px;
+}
+
+.home-cta-section {
+  padding: 70px 0;
+}
+
+.home-cta {
+  align-items: center;
+  background: #0f172a;
+  border-radius: 8px;
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  padding: clamp(30px, 5vw, 54px);
+}
+
+.home-cta h2 {
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.home-cta p {
+  color: #cbd5e1;
+  max-width: 720px;
+}
+
+.about-stats-section {
+  background: #0f172a;
+  padding: 28px 0;
+}
+
+.about-stat {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  color: white;
+  height: 100%;
+  padding: 22px 18px;
+  text-align: center;
+}
+
+.about-stat p {
+  color: #34d399;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.about-stat span {
+  color: #cbd5e1;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.about-section-title {
+  color: #0f172a;
+  font-size: clamp(1.8rem, 4vw, 3.125rem);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.about-section-copy {
+  color: #5d6875;
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+  margin-bottom: 0;
+}
+
+.about-method-card,
+.about-journey-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  height: 100%;
+  padding: 28px;
+  transition: 0.3s ease;
+}
+
+.about-method-card:hover,
+.about-journey-card:hover {
+  border-color: #b7d8c8;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  transform: translateY(-5px);
+}
+
+.about-method-icon,
+.about-cta-icon {
+  align-items: center;
+  background: #d1e7dd;
+  border-radius: 8px;
+  color: rgb(24, 121, 91);
+  display: inline-flex;
+  font-size: 2rem;
+  height: 58px;
+  justify-content: center;
+  margin-bottom: 22px;
+  width: 58px;
+}
+
+.about-method-card h5,
+.about-journey-card h5 {
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.about-method-card p,
+.about-journey-card p,
+.about-mission-band p,
+.about-cta p {
+  color: #5d6875;
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  margin-bottom: 0;
+}
+
+.about-mission-band {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #eef7f2 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: clamp(28px, 5vw, 56px);
+}
+
+.about-mission-band h2 {
+  color: #0f172a;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.about-values-list {
+  display: grid;
+  gap: 16px;
+}
+
+.about-value-item {
+  align-items: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  gap: 14px;
+  padding: 18px;
+}
+
+.about-value-item svg {
+  color: #198754;
+  flex: 0 0 auto;
+  font-size: 1.55rem;
+}
+
+.about-value-item span {
+  color: #1f2937;
+  font-weight: 700;
+}
+
+.about-journey-card span {
+  align-items: center;
+  background: #198754;
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  font-weight: 800;
+  height: 46px;
+  justify-content: center;
+  margin-bottom: 22px;
+  width: 46px;
+}
+
+.about-cta-section {
+  padding: 70px 0;
+}
+
+.about-cta {
+  align-items: center;
+  background: #0f172a;
+  border-radius: 8px;
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  padding: clamp(30px, 5vw, 54px);
+}
+
+.about-cta h2 {
+  color: white;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.about-cta p {
+  color: #cbd5e1;
+  max-width: 720px;
+}
+
+.contact-hero-copy,
+.contact-section-copy {
+  color: #5d6875;
+  font-size: 1.125rem;
+  line-height: 1.8rem;
+  margin-bottom: 0;
+}
+
+.contact-section-title {
+  color: #0f172a;
+  font-size: clamp(1.8rem, 4vw, 3.125rem);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.contact-help-card,
+.contact-form-card,
+.contact-faq-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  height: 100%;
+  padding: 28px;
+}
+
+.contact-help-card {
+  transition: 0.3s ease;
+}
+
+.contact-help-card:hover {
+  border-color: #b7d8c8;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  transform: translateY(-5px);
+}
+
+.contact-help-icon {
+  align-items: center;
+  background: #d1e7dd;
+  border-radius: 8px;
+  color: rgb(24, 121, 91);
+  display: inline-flex;
+  font-size: 2rem;
+  height: 58px;
+  justify-content: center;
+  margin-bottom: 22px;
+  width: 58px;
+}
+
+.contact-help-card h5,
+.contact-faq-item h5 {
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.contact-help-card p,
+.contact-faq-item p {
+  color: #5d6875;
+  font-size: 1.0625rem;
+  line-height: 1.75rem;
+  margin-bottom: 0;
+}
+
+.contact-form-card {
+  padding: clamp(24px, 5vw, 48px);
+}
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+  border-color: #dbe3ea;
+  border-radius: 8px;
+}
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.14);
+}
+
+.contact-support-panel {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  border-radius: 8px;
+  color: white;
+  height: 100%;
+  padding: clamp(24px, 5vw, 48px);
+}
+
+.contact-faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-faq-item {
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+}
+
+.contact-faq-item svg {
+  color: #198754;
+  flex: 0 0 auto;
+  font-size: 1.75rem;
+  margin-top: 2px;
+}
+
+@media (max-width: 991px) {
+  .home-cta,
+  .about-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-stat {
+    padding: 18px 12px;
+  }
+
+  .home-highlight-card,
+  .home-support-card,
+  .about-method-card,
+  .about-journey-card,
+  .contact-help-card,
+  .contact-faq-item {
+    padding: 24px;
+  }
+
+  .home-path-item {
+    align-items: flex-start;
+  }
+}
